@@ -35,3 +35,8 @@ height: 10%;
     padding: 50px 20px;
  }
  
+.continent{
+    display: flex;
+    justify-content: space-around;
+
+}
