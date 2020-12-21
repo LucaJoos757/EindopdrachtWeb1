@@ -1,0 +1,37 @@
+
+.logo{
+width: 10%;
+height: 10%;
+}
+.hoofdmenu{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.titelvak{
+
+    background-color: rgb(226, 222, 222);
+    margin: 50px;
+}
+.actie{
+    display: block;
+    
+    width: 150px;
+    background: rgb(114, 183, 248);
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 100%; 
+    line-height: 30px;
+    font-family: Arial;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+   
+ 
+} 
+ .titelTekst{
+    margin: 50px 50px;
+    padding: 50px 20px;
+ }
+ 
