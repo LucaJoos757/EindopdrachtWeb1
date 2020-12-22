@@ -8,7 +8,8 @@
      
          <!-- Bootstrap CSS -->
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-       </head>
+         <link rel="stylesheet" href="css/contact.css">
+        </head>
      
      <body>
          <header>
@@ -47,6 +48,40 @@
              </nav>
          
 <body>
-    
+    <main>
+        <form action="">
+            <h2>Contactforumlier</h2>
+            <div class="formgroup">
+                <label for="Voornaam">Voornaam </label>
+                <input type="text" name="Voornaam" placeholder="Luc" required>
+            </div>
+            <div class="formgroup">
+                <label for="naam">Naam     </label>
+                <input type="text" name="naam" placeholder="De Vos" required>
+            </div>
+            <div class="formgroup">
+                <label for="email">Email    </label>
+                <input type="email" name="email" placeholder="luc.devos@gmail.com" required>
+            </div>
+            <div class="formgroup">
+                <label for="passwoord">Passwoord</label>
+                <input type="password" name="passwoord" placeholder="passwoord" required>
+            </div>
+            <div class="formgroup">
+                <label for="Onderwerp">Onderwerp</label>
+                <select name="Onderwerp" required>
+                    <option value="">-</option>
+                    <option value="Vliegtickets">Vliegtickets</option>
+                    <option value="Hotel">Hotel boeken</option>
+                    <option value="Auto">Auto huren</option>
+                </select>
+            </div>
+            <div class="formgroup">
+                <label for="geboortedatum">Geboortedatum</label>
+                <input type="date" name="geboortedatum" required>
+            </div>
+            <input type="submit" value="Verstuur" name="Send">
+        </form>
+    </main>
 </body>
 </html>

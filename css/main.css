@@ -14,8 +14,7 @@ height: 10%;
     margin: 50px;
 }
 .actie{
-    display: block;
-    
+    display: block;    
     width: 150px;
     background: rgb(114, 183, 248);
     color: #ffffff;
@@ -27,6 +26,7 @@ height: 10%;
     border-radius: 20px;
     text-decoration: none;
     margin-top: 30px;
+    
    
  
 } 
@@ -39,4 +39,25 @@ height: 10%;
     display: flex;
     justify-content: space-around;
 
+}
+.fotoContinent{
+
+    width: 250px;
+    height: 200px;
+ }
+.vak{
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+}
+.boekNU{
+    padding: 10px;
+    margin: 5px 10px;
+    text-align: center;
+    background-color: rgb(224, 223, 223);
+}
+
+footer{
+    background-color: blue;
+    color: wheat;
 }

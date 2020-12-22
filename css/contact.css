@@ -1,0 +1,13 @@
+.formgroup{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+    padding: 7px 0;
+    margin-left: 50px;;
+}
+.formgroup label{
+	margin-bottom: 3px;
+
+
+}
