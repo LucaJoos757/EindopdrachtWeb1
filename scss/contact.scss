@@ -1,0 +1,90 @@
+// imports
+
+@import "partials/colors";
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .formgroup {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, input::placeholder {
+            color: color(text-secundary);
+            width: 80%;
+            border: solid 0.2rem color(accent-primary);
+            background-color: color(accent-primary);
+            border-radius: 1rem;
+            padding: 1rem;
+           
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+
+            input {
+                width: auto;
+                margin-right: 1rem;
+                margin-left: 3rem;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .gridWide {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        select {
+            width: 90%;
+        }
+    }
+
+    #submit {
+        width: 10rem;
+        height: 5rem;
+        background-color: color(accent-primary);
+        border: none;
+        border-radius: 1rem;
+        color: color(text-secundary);
+        font-weight: bold;
+        transition: background 1s ease, color 1s ease;
+        box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.3);
+        
+        &:hover {
+            background-color: color(accent-light);
+            color: color(text-primary);
+            
+        }
+    }
+}
+@media only screen and (max-width: 420px) {
+    form {
+        grid-template-columns: 1fr;
+
+        .formgroup {
+            input, select {
+                width: 100%;
+            }
+        }
+
+        #submit {
+            width: 100%;
+        }
+
+        .gridWide {
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+    }
+}

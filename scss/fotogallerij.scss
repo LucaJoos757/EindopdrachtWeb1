@@ -1,0 +1,57 @@
+// imports
+@import "partials/colors";
+
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 5rem;
+
+    .gallery-item {
+        // border: solid 0.1rem color(text-primary);
+        box-shadow: 6px 6px 16px 0px rgba(0,0,0,0.3);
+        width: 25rem;
+        margin-bottom: 2rem;
+        transition: transform 1s ease;
+        cursor: pointer;
+
+        h5 a {
+            color: color(text-primary);
+            text-decoration: none;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+        }
+
+    p {
+        padding: 1rem 2rem;
+    }
+
+        .hidden {
+            display: none;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .row {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .row {
+        grid-template-columns: 1fr;
+
+        >div{
+            margin: 0 auto;
+        }
+        
+    }
+}

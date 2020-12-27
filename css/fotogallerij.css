@@ -1,0 +1,57 @@
+:root {
+  --black: #1B1B1E;
+  --grey: rgb(235, 235, 235);
+  --dark_grey: rgb(223, 223, 223);
+  --dark_blue: rgb(0, 0, 0);
+  --medium_blue: #0E6BA8;
+  --light_blue: rgb(124, 217, 253);
+  --light_sand: #E3D985;
+  --Satin_Gold: #C6A15B;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 5rem;
+}
+.row .gallery-item {
+  box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.3);
+  width: 25rem;
+  margin-bottom: 2rem;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+.row .gallery-item h5 a {
+  color: var(--black);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+.row .gallery-item p {
+  padding: 1rem 2rem;
+}
+.row .gallery-item .hidden {
+  display: none;
+}
+.row .gallery-item:hover {
+  transform: scale(1.1);
+}
+.row img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 770px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .row > div {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=fotogallerij.css.map */

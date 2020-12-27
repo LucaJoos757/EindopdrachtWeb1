@@ -1,18 +1,83 @@
-.formgroup{
-   
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-    padding: 7px 0;
-    margin-left: 50px;;
-}
-.formgroup label{
-	margin: 10px;
-
-
+:root {
+  --black: #1B1B1E;
+  --grey: rgb(235, 235, 235);
+  --dark_grey: rgb(223, 223, 223);
+  --dark_blue: rgb(0, 0, 0);
+  --medium_blue: #0E6BA8;
+  --light_blue: rgb(124, 217, 253);
+  --light_sand: #E3D985;
+  --Satin_Gold: #C6A15B;
 }
 
-.gender{
-    display: flex;
-    justify-content: space-between;
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+form .formgroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+form .formgroup label {
+  font-weight: bold;
+}
+form .formgroup input, form .formgroup select, form .formgroup input::placeholder {
+  color: var(--grey);
+  width: 80%;
+  border: solid 0.2rem var(--medium_blue);
+  background-color: var(--medium_blue);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+form .formgroup section {
+  display: flex;
+  align-items: center;
+}
+form .formgroup section input {
+  width: auto;
+  margin-right: 1rem;
+  margin-left: 3rem;
+}
+form .formgroup section input:first-child {
+  margin-left: 0;
+}
+form .gridWide {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+form .gridWide select {
+  width: 90%;
+}
+form #submit {
+  width: 10rem;
+  height: 5rem;
+  background-color: var(--medium_blue);
+  border: none;
+  border-radius: 1rem;
+  color: var(--grey);
+  font-weight: bold;
+  transition: background 1s ease, color 1s ease;
+  box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.3);
+}
+form #submit:hover {
+  background-color: var(--light_blue);
+  color: var(--black);
+}
+
+@media only screen and (max-width: 420px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+  form .formgroup input, form .formgroup select {
+    width: 100%;
+  }
+  form #submit {
+    width: 100%;
+  }
+  form .gridWide {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

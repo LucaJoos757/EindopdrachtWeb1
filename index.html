@@ -1,115 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <title>Home</title>
    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'/>
+    
 </head>
-
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-            <a class="navbar-brand" href="index.html">Logo</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation"></button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Onze_Reizen.html">Onze Reizen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Reistips.html">Reistips</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="Fotogallerij.html">Fotogallerij </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html"">Contact</a>
-                    </li>
-                    
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class
-                    ="form-control mr-sm-2" type="text" placeholder="Zoek">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
+        <nav>
+            <a href="index.html"><img src="img/logo.jpg" alt="mijn logo" class="logo"></a>
+            <p class="headTitle">Untravel</p>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Onze_Reizen.html">Onze reizen</a></li>
+                <li><a href="Reistips.html">Reistips</a></li>
+                <li><a href="Fotogallerij.html">Fotogallerij</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburgerBTN" ><i class="fas fa-bars"></i></button>
         </nav>
-
-    </header>   
-    
-        <div class="titelvak">
-            <div class="titelTekst">
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="welcome">
                 <h1>Welkom op onze site!</h1>
-                <sub>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, 
                 voluptates ex ea accusamus commodi dolorem ducimus dolore nam incidunt voluptate, 
                 doloremque ipsum obcaecati nihil laborum accusantium. Nisi error sit, soluta esse a
-                 corporis velit sint perspiciatis aliquid minus provident alias maiores voluptatum 
-                 nobis eos incidunt modi nesciunt. Temporibus,
-                 harum. </sub> 
-                <br>
-                <a href="https://www.tui.be/nl" class="actie" target="blank">Ik wil op reis!</a>
-           </div>
-        </div>
-        <div class="continent">
-        <div class="vak">
-            <img src="img/Europa.jpg" alt="klik hier voor een reis in Europa" class="fotoContinent">
-            <h2>Europa</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eaque, nisi perferendis tempore in qui eum soluta dignissimos, 
-                facere magni vero nam adipisci! Aliquam fugiat placeat officiis at exercitationem sed.</p>
-            <div class="boekNU">
-            <a href="https://www.tui.be/nl/wereldreizen-europa" class="actie" target="blank">Boek Nu!</a>
+                corporis velit sint perspiciatis aliquid minus provident alias maiores voluptatum 
+                nobis eos incidunt modi nesciunt. Temporibus,
+                harum. </p>
+                <div class="actie">
+                    <a href="https://www.tui.be/nl" target="blank">Ik wil op reis!</a>
+                </div>
             </div>
-
-        </div>
-        <div class="vak">
-            <img src="img/AziëOce.jpg" alt="klik hier voor reis in Azië en Oceanie" class="fotoContinent">
-            <h2>Azië & Oceanië</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, provident! Amet fuga omnis 
-                necessitatibus soluta. Aliquam, hic? Nihil eum culpa quasi velit corrupti omnis, molestias iusto 
-                blanditiis veritatis voluptatibus odio.</p>
-            <div class="boekNU">
-            <a href="https://www.tui.be/nl/wereldreizen-azie-oceanie" class="actie" target="blank">Boek Nu!</a>
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/Porto.jpg" alt="klik hier voor een reis in Europa" class="fotoContinent">
+                    <div class="text">
+                        <h2>Europa</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ad necessitatibus similique iure,
+                            voluptates quam, nemo nesciunt voluptate tempore commodi distinctio libero autem quis, molestiae quas?
+                            Facilis sapiente sint perferendis debitis excepturi sequi rem veniam!</p>
+                    </div>
+                    <div class="boekNU">
+                    <a href="https://www.tui.be/nl/wereldreizen-europa" class="actie" target="blank">Boek Nu!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/AziëOce.jpg" alt="klik hier voor reis in Azië en Oceanie" class="fotoContinent">
+                    <div class="text">
+                        <h2>Azië & Oceanië</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minima quam praesentium modi officia. Veritatis inventore delectus placeat nam? Enim
+                            voluptate molestiae maxime recusandae deleniti culpa asperiores magni architecto amet expedita. Perspiciatis facilis esse</p>
+                        
+                    </div>
+                    <div class="boekNU">
+                    <a href="https://www.tui.be/nl/wereldreizen-azie-oceanie" class="actie" target="blank">Boek Nu!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Amerika3.jpg" alt="klik hier voor een reis naar het amerikaanse continent" class="fotoContinent">
+                    <div class="text">                        
+                        <h2>Noord-Amerika</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate exercitationem ipsa ea dignissimos recusandae illo necessitatibus fuga, non dolor itaque magna
+                            m debitis accusantium, eligendi sit enim neque. Impedit amet sint ratione nulla eaque maxime quidem.</p>
+                    </div>
+                    <div class="boekNU">
+                <a href="https://www.tui.be/nl/wereldreizen-noord-amerika" class="actie" target="blank">Boek Nu!</a>
+                    </div>
+                </div>
+                <div class="card">            
+                    <img src="img/Africa.jpg" alt="klik hier voor een afrikaanse reis" class="fotoContinent">
+                    <div class="text">
+                        <h2>Afrika</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi temporibus soluta est dolor quibusdam a excepturi commodi. Nostrum dolorem ratione, esse beatae
+                        consequatur non quis aspernatur voluptates eius officiis, dolore vero, voluptatibus ad fugit in error.</p>
+                    </div>
+                    <div class="boekNU">
+                        <a href="https://www.tui.be/nl/wereldreizen-afrika" class="actie" target="blank">Boek Nu!</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="vak">
-            <img src="img/Amerika.jpg" alt="klik hier voor een reis naar het amerikaanse continent" class="fotoContinent">
-            <h2>Noord-Amerika</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur earum, quia,
-                vero fugiat deleniti commodi soluta quae amet quisquam id facere velit et, omnis nulla fugit quidem recusandae dolores officiis!
-            </p>
-            <div class="boekNU">
-          <a href="https://www.tui.be/nl/wereldreizen-noord-amerika" class="actie" target="blank">Boek Nu!</a>
-            </div>
-        </div>
-        <div class="vak">            
-            <img src="img/Africa.jpg" alt="klik hier voor een afrikaanse reis" class="fotoContinent">
-            <h2>Afrika</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eos optio
-                 deserunt modi ipsa corrupti dolor fugiat quasi officia, voluptate eum eveniet repellendus 
-                 cupiditate similique dignissimos amet eligendi quidem nulla.
-            </p>
-            <div class="boekNU">
-                <a href="https://www.tui.be/nl/wereldreizen-afrika" class="actie" target="blank">Boek Nu!</a>
-            </div>
-        </div>
-        </div>
-        
     </main>   
     <footer>
-        
-
-
+        <div class="wrapper">
+            <div class="contact">
+                <a href="index.html"><img src="img/logo.jpg" alt="mijn logo" class="logo"></a>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>Korenmarkt 5 9000 Gent</li>
+                    <li><i class="fas fa-phone-alt"></i>+32 9 865 943 946</li>
+                    <li><i class="fas fa-envelope"></i>Untravel@gmail.com</li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>Over dit bedrijf</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quasi recusandae molestias vero omnis iusto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo adipisci labore doloribus ullam blanditiis accusantium pariatur. Perferendis ipsa totam amet!</p>
+                <div class="icons">
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedIn.com" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.github.com" target="blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>     
-   
+    <script src="js/main.js"></script>
 </body>
 </html>
 

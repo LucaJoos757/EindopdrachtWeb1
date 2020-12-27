@@ -1,0 +1,28 @@
+@function color($arg) {
+    @return map-get($map: $colors, $key: $arg);
+  }
+  
+  :root {
+    --black: #1B1B1E;
+    --grey: rgb(235, 235, 235);
+    --dark_grey: rgb(223, 223, 223);
+    --dark_blue: rgb(0, 0, 0);
+    --medium_blue: #0E6BA8;
+    --light_blue: rgb(124, 217, 253);
+    --light_sand: #E3D985;
+    --Satin_Gold: #C6A15B;
+    }
+  
+  $colors: (
+    text-primary: var(--black),
+    text-secundary: var(--grey),
+    text-highlight: var(--medium_blue),
+    bg-primary: var(--grey),
+    bg-dark: var(--dark_blue),
+    accent-primary: var(--medium_blue),
+    accent-secundary: var(--light_sand),
+    accent-light: var(--light_blue),
+    accent-dark: var(--dark_grey),
+  
+  );
+  
