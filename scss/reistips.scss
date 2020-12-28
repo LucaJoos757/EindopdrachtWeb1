@@ -5,12 +5,16 @@
     li{
     padding: 1.5rem 2rem;
     margin-bottom: 1rem;
-    background-color: color(accent-secundary) ;
+    background-color: color(accent-primary) ;
     border-radius: 1rem;
-    transition: transform 1s ease;
+    color: color(text-secundary);
+    transition: background 1s ease, color 1s ease;
+    
 
     &:hover{
-transform: scale(1.1);
+        background: color(accent-light);
+        color: color(text-primary);
+        transition: background 1s ease, color 1s ease;
 
     }
 

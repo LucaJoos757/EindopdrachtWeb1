@@ -12,12 +12,15 @@
 .tips li {
   padding: 1.5rem 2rem;
   margin-bottom: 1rem;
-  background-color: var(--light_sand);
+  background-color: var(--medium_blue);
   border-radius: 1rem;
-  transition: transform 1s ease;
+  color: var(--grey);
+  transition: background 1s ease, color 1s ease;
 }
 .tips li:hover {
-  transform: scale(1.1);
+  background: var(--light_blue);
+  color: var(--black);
+  transition: background 1s ease, color 1s ease;
 }
 
 /*# sourceMappingURL=reistips.css.map */
