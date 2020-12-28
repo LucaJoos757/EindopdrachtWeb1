@@ -1,0 +1,23 @@
+:root {
+  --black: #1B1B1E;
+  --grey: rgb(235, 235, 235);
+  --dark_grey: rgb(223, 223, 223);
+  --dark_blue: rgb(0, 0, 0);
+  --medium_blue: #0E6BA8;
+  --light_blue: rgb(124, 217, 253);
+  --light_sand: #E3D985;
+  --Satin_Gold: #C6A15B;
+}
+
+.tips li {
+  padding: 1.5rem 2rem;
+  margin-bottom: 1rem;
+  background-color: var(--light_sand);
+  border-radius: 1rem;
+  transition: transform 1s ease;
+}
+.tips li:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=reistips.css.map */

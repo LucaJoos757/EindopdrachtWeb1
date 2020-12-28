@@ -1,0 +1,34 @@
+// imports
+@import "partials/colors";
+
+.tips {
+    li{
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    background-color: color(accent-secundary) ;
+    border-radius: 1rem;
+    transition: transform 1s ease;
+
+    &:hover{
+transform: scale(1.1);
+
+    }
+
+}
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+    
+}
+@media only screen and (max-width: 420px) {
+    
+
+}
