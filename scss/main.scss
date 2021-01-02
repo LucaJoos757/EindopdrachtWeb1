@@ -46,6 +46,7 @@ header {
     nav{
         display: flex;
         align-items: center;
+        
 
         ul {
             display: flex;
@@ -72,9 +73,16 @@ header {
             width: 8rem;
         }
 
-        .hamburgerBTN, .headTitle {
+        .hamburgerBTN{
             display: none;
         }
+        .headTitle {
+                display: block;
+                color: color(text-secundary);
+                font-weight: bold;
+                font-size: 4rem;
+                text-decoration: none;
+            }
     }
 }
 
@@ -173,12 +181,7 @@ footer {
         nav{
             flex-direction: column-reverse;
             
-            .headTitle {
-                display: block;
-                color: color(text-secundary);
-                font-weight: bold;
-                font-size: 4rem;
-            }
+            
 
             .navigation{
                 display: none;
