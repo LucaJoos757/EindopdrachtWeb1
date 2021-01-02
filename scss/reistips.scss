@@ -9,8 +9,7 @@
     border-radius: 1rem;
     color: color(text-secundary);
     transition: background 1s ease, color 1s ease;
-    list-style: none;
-    
+    list-style-type: none;    
 
     &:hover{
         background: color(accent-light);
@@ -22,18 +21,5 @@
 }
 
 
-
-}
-
-
-
-
-
-
-@media only screen and (max-width: 770px) {
-    
-}
-@media only screen and (max-width: 420px) {
-    
 
 }
